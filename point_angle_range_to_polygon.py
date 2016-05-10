@@ -1,6 +1,11 @@
 '''
 Script tool to create coverage polygons for radio towers.
 '''
+#possibly try describe to handle the error I was getting with the following line: "cursorFields.remove('SHAPE')"
+#desc = arcpy.Describe(fc)
+#fieldList.remove(desc.shapeFieldName)
+#fieldList.remove(desc.OIDFieldName)
+
 import arcpy, os, time
 
 def createPointAngleRangePolygons(points, outputPolygons, azimuthField, rangeField, beamWidthField):
